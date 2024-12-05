@@ -1,5 +1,5 @@
 const User=require("../Schema/UserSchema")
-const bcrypt=require("bcrypt")
+const bcrypt = require('bcryptjs');
 const login = async (req, res) => {
     try {
         const { email, password } = req.body;
